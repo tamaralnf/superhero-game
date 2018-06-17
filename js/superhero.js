@@ -37,7 +37,7 @@ var fireball = new Object({
     });
 
 function checkCollisions() {
-    if (wonderwoman.skin.bounds.intersects(fireball.bounds)) {
+    if (wonderwoman.skin.bounds.intersects(fireball.skin.bounds)) {
         wonderwoman.score = (wonderwoman.score + 50);
         fireball.skin.position.x = Math.ceil(Math.random() * 1000);
         fireball.skin.position.y = 10;
